@@ -3,7 +3,6 @@ require 'packetfu'
 CLOSED_STATE      = "CLOSED".freeze
 SYN_SENT_STATE    = "SYN-SENT".freeze
 ESTABLISHED_STATE = "ESTABLISHED".freeze
-FIN_WAIT_1_STATE  = "FIN-WAIT-1".freeze
 LAST_ACK_STATE    = "LAST-ACK".freeze
 
 @config = PacketFu::Utils.whoami?
@@ -22,7 +21,7 @@ case @to
     @dst_host = 'www.google.com'
 
   when :dingyu
-    @dst_ip = "104.236.219.141" # daike
+    @dst_ip = "104.236.219.141" # dingyu
     @dst_host = 'dingyu.me'
 end
 
